@@ -64,7 +64,7 @@ em {
 }
 
 .home-about-textbox h1 {
-	color: #E1A87A;
+	color: white;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -110,7 +110,7 @@ em {
     }
 
     .home-about {
-        background-image: url('../img/Untitle-04.jpg') linear-gradient(to left, rgba(0,0,0,255), rgba(255,255,255,1));
+        background-image: none;
         background-repeat: no-repeat;
         background: cover;
         padding: 5em;
@@ -175,19 +175,64 @@ em {
     .welcome {
         font-weight: 300;
         font-size: 3.5rem;
-        color: #E1A87A;
+        color: white;
     }
     
     .lead {
         font-weight: 900;
-        color: #E1A87A;
+        color: white;
     }
 
     .btn {
         font-weight: 900;
         color: white;
         margin-left: 0.9rem;
-
     }
 }
 
+@media(max-width: 736px) {
+    .home-hero {
+        height: 100vh;
+        padding-bottom: 25em;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .home-about-textbox{
+        padding: 7.5em 3.5em;
+    }
+
+    .home-about-textbox h1{
+        width: 150px;
+        top: 0;
+    }
+
+}
+
+@media(max-width: 812px) {
+    .home-hero {
+        height: 100vh;
+        padding-bottom: 30em;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .home-about-textbox{
+        padding: 7.5em 3.5em;
+    }
+
+    .home-about-textbox h1{
+        width: 150px;
+        top: 0;
+    }
+
+}
+
+@media(max-width: 320px) {
+    .home-about-textbox{
+        width: 330px;
+        margin-left: -78%;
+    }
+}
